@@ -18,3 +18,12 @@ if astronvim.default_colorscheme then
 end
 
 require("astronvim.utils").conditional_func(astronvim.user_opts("polish", nil, false), true)
+
+-- PERSO
+
+-- Copilot de la même couleur que les commentaires
+vim.api.nvim_set_hl(0, "CopilotSuggestion", { fg = "#5c6370" })
+-- On change le couleur de la feneetre de suggestion
+vim.api.nvim_set_hl(0, "FloatBorder", { bg = "#282c34" })
+-- On change la couleur de whichkey
+vim.api.nvim_set_hl(0, "WhichKeyFloat", { fg = "#5c6370" })
