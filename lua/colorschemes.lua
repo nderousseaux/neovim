@@ -45,6 +45,5 @@ vim.api.nvim_create_autocmd('ColorScheme', {
   'hi markid9                            guifg=#ffedc7 |' ..
   'hi markid10                           guifg=#cebfaa |'
 })
-
 vim.cmd("colorscheme onedark")
 
