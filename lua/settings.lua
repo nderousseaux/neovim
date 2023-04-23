@@ -101,3 +101,5 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   end,
 })
 
+-- Hide mode
+vim.api.showmode = false
