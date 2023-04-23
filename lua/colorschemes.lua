@@ -1,3 +1,4 @@
+
 require("onedark").setup({
   dark_theme = "onedark", -- The default dark theme
   light_theme = "onelight", -- The default light theme
@@ -46,3 +47,4 @@ vim.api.nvim_create_autocmd('ColorScheme', {
 })
 
 vim.cmd("colorscheme onedark")
+

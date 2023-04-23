@@ -1,13 +1,11 @@
-require('config.settings')
+if vim.loader then vim.loader.enable() end -- enable vim.loader early if available
 
--- Lazy
-require('config.lazy')
-
-require('util.hjkl_notifier')
-require('util.new_note')
--- Select theme.lua fix feline and nvim-cokeline
-require('config.colorschemes.onedark')
-
-require('config.completion')
--- Keymap
-require('config.mappings')
+-- On charge les sources
+for _, source in ipairs {
+  "settings",
+  "plugins-manager",
+  "colorschemes",
+} do
+  local status_ok, fault = pcall(require, source)
+  if not status_ok then vim.api.nvim_err_writeln("Failed to load " .. source .. "\n\n" .. fault) end
+end
