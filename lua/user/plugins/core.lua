@@ -9,4 +9,11 @@ return {
     -- Onedark
     'navarasu/onedark.nvim',
   },
+
+  {
+    -- Tmux navigator
+    'christoomey/vim-tmux-navigator',
+    lazy = false,
+  },
+
 }
